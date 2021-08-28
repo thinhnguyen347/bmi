@@ -1,0 +1,184 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css");
+
+.App {
+  font-family: Poppins;
+  font-size: 16px;
+}
+
+.App-container {
+  width: 323px;
+  height: 700px;
+  border: 5px solid black;
+  border-radius: 30px;
+  box-shadow: 30px 20px 50px #d4d3d3;
+  background-color: #f6f9fe;
+}
+
+.App-measurement-modal-show {
+  z-index: 5;
+  background-color: #7578fe;
+  height: 40px;
+  width: 28%;
+  border-radius: 20px 0 0 20px;
+  top: 28%;
+  transition: 0.5s cubic-bezier(0.02, 0.76, 0.12, 0.89);
+}
+
+.App-measurement-modal-hide {
+  z-index: 4;
+  background-color: #7578fe;
+  height: 40px;
+  width: 5%;
+  border-radius: 20px 0 0 20px;
+  top: 28%;
+  right: 0;
+  opacity: 0.6;
+  transition: all 0.5s cubic-bezier(0.02, 0.76, 0.12, 0.89);
+}
+
+.App-measurement-modal-hide:hover {
+  width: 10%;
+}
+
+.App-measurement-modal-hide:hover,
+.App-measurement-modal-hide:focus,
+.App-measurement-modal-show:focus {
+  opacity: 1;
+  box-shadow: 0 0 0 0;
+}
+
+.App-notch,
+.App-bar,
+.App-time {
+  z-index: 999;
+}
+
+.App-time {
+  width: 23%;
+  padding: 6px 0px;
+  font-size: 0.9em;
+}
+
+.App-notch {
+  width: 60%;
+  height: 50px;
+  border-radius: 20px;
+}
+
+.App-bar {
+  bottom: 10px;
+  width: 30%;
+  height: 4px;
+  border-radius: 5px;
+}
+
+.App-logo,
+.App-color {
+  color: #7578fe;
+}
+
+.App-button {
+  background-color: #7578fe;
+  opacity: 1;
+  width: 80% !important;
+  transition: 0.5s ease-in-out;
+}
+
+.App-button:hover,
+.App-button-back:hover {
+  opacity: 0.8;
+  transform: translateY(-5px);
+}
+
+input[type="radio" i],
+input[type="range" i] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type="radio" i] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+label img {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  border-radius: 50%;
+}
+
+label img:hover {
+  opacity: 1;
+  box-shadow: 5px 5px 10px #a8a9fe;
+}
+
+input[type="radio"]:checked ~ img {
+  opacity: 1;
+  box-shadow: 0px 0px 15px 5px #a8a9fe;
+}
+
+input[type="radio"]:checked ~ p {
+  opacity: 1;
+}
+
+label p {
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+label img:hover ~ p {
+  opacity: 1;
+}
+
+.App-slider,
+.App-slider:focus {
+  width: 100%;
+  height: 2px;
+  background-color: #7578fe;
+  border-radius: 2px;
+  opacity: 0.8;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.App-slider:hover {
+  opacity: 1;
+}
+
+.App-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #7578fe;
+  cursor: pointer;
+  border: none;
+}
+
+.App-result {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: #f6f9fe;
+  transition: 0.5s cubic-bezier(0.02, 0.76, 0.12, 0.89);
+}
+
+.App-result-container {
+  box-shadow: 10px 10px 20px #b5b7ee, -10px -10px 20px #dfdfe0;
+  width: 70%;
+  border-radius: 20px;
+}
+
+.App-result-bmi {
+  font-size: 50px;
+}
+
+.App-button-back {
+  background-color: #7578fe;
+  opacity: 1;
+  width: 50% !important;
+  transition: 0.5s ease-in-out;
+}
