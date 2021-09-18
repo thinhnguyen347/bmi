@@ -235,7 +235,7 @@ export default function App() {
 
         <div className="App-bar bg-dark position-absolute start-50 translate-middle"></div>
         <div
-          className={`App-result position-absolute top-0 px-2 py-4 ${showNextPage ? "end-0" : "end-100"}`}
+          className={`App-result position-absolute top-0 px-2 py-4 ${showNextPage ? "end-0" : "end-0"}`}
         >
           <p className="btn text-secondary m-0" onClick={backHomePage}>
             &lt; Back

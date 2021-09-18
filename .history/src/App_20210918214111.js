@@ -12,7 +12,7 @@ export default function App() {
   const [inputWeight, setInputWeight] = useState(65);
   const [BMI, setBMI] = useState(0);
   const [message, setMessage] = useState("");
-  const [showNextPage, setShowNextPage] = useState(false);
+  const [showNextPage, setShowNextPage] = useState(f);
   const [showBtnState, setShowBtnState] = useState("start-100");
   const [mode, setMode] = useState("Metric");
   const [heightUnit, setHeightUnit] = useState("cm");
@@ -155,11 +155,11 @@ export default function App() {
     }
 
     setBMI(index);
-    setShowNextPage(true);
+    setShowNextPage("end-0");
   }
 
   function backHomePage() {
-    setShowNextPage(false);
+    setShowNextPage("end-100");
     setBMI(0);
     setMessage("");
   }
@@ -235,7 +235,7 @@ export default function App() {
 
         <div className="App-bar bg-dark position-absolute start-50 translate-middle"></div>
         <div
-          className={`App-result position-absolute top-0 px-2 py-4 ${showNextPage ? "end-0" : "end-100"}`}
+          className={`App-result position-absolute top-0 px-2 py-4 ${showNextPage}`}
         >
           <p className="btn text-secondary m-0" onClick={backHomePage}>
             &lt; Back
